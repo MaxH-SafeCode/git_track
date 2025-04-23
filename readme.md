@@ -1,7 +1,7 @@
-# VCS_TRACK #
+# GIT_TRACK #
 
 ## Description ##
-**VCS_TRACK** is a set of scripts that generate a c/c++ header file with the current git commit SHA1 and date.
+**GIT_TRACK** is a set of scripts that generate a c/c++ header file with the current git commit SHA1 and date.
 
 The script should be run as part of the pre-build steps prior to compiling the c/c++ code.
 
@@ -12,12 +12,12 @@ The vcs_track.h file generated should be ignored by a project's version control 
 If the author date is required, instead of the commit date, the git-show script line should be altered.
 
 ## Scripts ##
-* **vcs_track.sh**
-* **vcs_track.py**
-* **vcs_track_alt.sh** - Designed for Altera projects fitting a particular
+* **git_track.sh**
+* **git_track.py**
+* **git_track_alt.sh** - Designed for Altera projects fitting a particular
 folder structure.
 
-* **vcs_label.py** - Labels Intel Hex Files with git commit date and SHA1.  It is geared towards TI Code Composer projects.
+* **git_label.py** - Labels Intel Hex Files with git commit date and SHA1.  It is geared towards TI Code Composer projects.
 
 * **show\_alter\_versions.sh** - Displays git metadata for Altera projects fitting a particular folder structure.  Does not write a header file.
 
