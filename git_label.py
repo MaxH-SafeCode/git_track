@@ -24,7 +24,7 @@ if len(sys.argv) != 2:
     print "ERROR:  Missing argument for %s" % argv[0]
     sys.exit()
 
-print "Starting VCS_LABEL"
+print "Starting GIT_LABEL"
 proc = subprocess.Popen(["git", "rev-parse", "HEAD"], stdout=subprocess.PIPE, shell=True)
 (a, err) = proc.communicate()
 proc = subprocess.Popen(["git", "show", "-s", "--format=%ci"], stdout=subprocess.PIPE, shell=True)
